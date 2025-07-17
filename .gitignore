@@ -1,0 +1,5 @@
+src/node_modules
+src/main.js
+src/package-lock.json
+Makefile
+.idea

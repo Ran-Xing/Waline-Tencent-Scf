@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node node_modules/@waline/vercel/vanilla.js 9000"
+  },
+  "dependencies": {
+    "@waline/vercel": "^1.32.3"
+  }
+}

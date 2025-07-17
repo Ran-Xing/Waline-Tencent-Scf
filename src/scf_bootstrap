@@ -1,0 +1,2 @@
+#!/bin/bash
+/var/lang/node18/bin/node node_modules/@waline/vercel/vanilla.js 9000
