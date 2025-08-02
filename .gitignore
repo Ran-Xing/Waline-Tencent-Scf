@@ -3,3 +3,5 @@ src/main.js
 src/package-lock.json
 Makefile
 .idea
+serverless-own.yml
+.DS_Store

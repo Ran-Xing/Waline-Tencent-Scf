@@ -1,0 +1,42 @@
+app: Waline
+component: scf
+inputs:
+  description: Waline 评论系统
+  eip: true
+  environment:
+    variables:
+      MYSQL_CHARSET: utf8mb4
+      MYSQL_DB: waline
+      MYSQL_HOST: mysql5.sqlpub.com
+      MYSQL_PASSWORD: xxxxx
+      MYSQL_PORT: '3310'
+      MYSQL_USER: waline
+      SERVER_URL: http://waline.xxxxx.xxx
+      SITE_NAME: XXXXX - Blog
+      SITE_URL: http://waline.xxxxx.xxx
+      TZ: Asia/Shanghai
+      LARK_WEBHOOK: https://open.feishu.cn/open-apis/bot/v2/hook/xxxx
+      secureDomains: waline.xxxxx.xxx,xxxx-xxxx.ap-xxxx.tencentscf.com
+  events:
+    - http:
+        parameters:
+          authType: NONE
+          netConfig:
+            enableExtranet: true
+            enableIntranet: false
+          qualifier: $DEFAULT
+  handler: ''
+  initTimeout: 120
+  memorySize: 128
+  name: Waline
+  namespace: default
+  publicAccess: true
+  region: ap-nanjing
+  runtime: Nodejs18.15
+  src: ./src
+  timeout: 20
+  type: web
+name: ap-nanjing_default_Waline
+stage: dev
+# When using this configuration file for deployment, make sure the file name is "serverless.yml".
+# For more information: https://github.com/serverless-components/tencent-scf/blob/master/docs/configure.md
