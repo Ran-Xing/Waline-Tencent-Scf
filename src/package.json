@@ -1,6 +1,15 @@
 {
+  "name": "waline-tencent-scf",
+  "version": "1.0.0",
+  "description": "Waline 评论系统的 Tencent Serverless 端部署包。",
+  "author": "XRSec",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XRSec/Waline-Tencent-Scf.git"
+  },
   "scripts": {
-    "start": "node node_modules/@waline/vercel/vanilla.js 9000"
+    "start": "node app.js"
   },
   "dependencies": {
     "@waline/vercel": "^1.32.3"
